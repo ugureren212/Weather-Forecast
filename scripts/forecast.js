@@ -1,8 +1,8 @@
 class Forecast{
     constructor(){
         this.APIkey = "SoLuEQUYLZ8W9FHA6v6fAnFhX9c1MNfA";
-        this.weatherURI = "http://dataservice.accuweather.com/currentconditions/v1/";
-        this.cityURI = "http://dataservice.accuweather.com/locations/v1/cities/search";
+        this.weatherURI = "https://dataservice.accuweather.com/currentconditions/v1/";
+        this.cityURI = "https://dataservice.accuweather.com/locations/v1/cities/search";
     }
 
     async updateCity(city){
@@ -38,40 +38,3 @@ class Forecast{
     }
 
 }
-
-
-
-
-
-
-
-// const APIkey = "SoLuEQUYLZ8W9FHA6v6fAnFhX9c1MNfA";
-
-
-// //get city information from api
-// const getCity = async (city) => {
-
-    
-// };
-
-// //get weather information from api
-// const getWeather = async (Key) => {
-
-//     const baseEndPoint = "http://dataservice.accuweather.com/currentconditions/v1/";
-//     const query = `${Key}?apikey=${APIkey}`;
-
-//     const response = await fetch(baseEndPoint + query);
-//     const data = await response.json();
-
-//     //first index of array is always the desired weather detail. 
-//     return data[0];
-// }
-
-//need to fulfilled (.then()) promises so json data can be accessible.
-// getCity("london").then(data => {
-//        return getWeather(data.Key)
-//     }).then(data => {
-//         console.log("// weather details //");
-//         console.log(data);
-//     })
-//     .catch( error => console.log(error) );
